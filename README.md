@@ -1,0 +1,1 @@
+Estudando JAVA para conseguir o meu emprego efetivo na area de desenvolvimento FULL-STACK ou pelo o menos BACK-END
