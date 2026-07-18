@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Locale; // Importacao de uma biblioteca para algumas funcoes do meu codigo funcionarem normalmente
 
 public class SaidaDeDados {
