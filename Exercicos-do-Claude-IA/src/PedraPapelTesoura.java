@@ -24,38 +24,37 @@ public class PedraPapelTesoura {
             String jogadorJogador; // Respsota do jogador
 
             System.out.print("Digite a sua opcao entre as 3 possiveis: ");
-            jogadorJogador = sc.next();
+            jogadorJogador = sc.next().toLowerCase();
             System.out.println();
 
-            int processo = disputa(jogadaPC, jogadorJogador);
+            if (jogadorJogador.equals("pedra") || jogadorJogador.equals("papel") || jogadorJogador.equals("tesoura"))
+            {
 
-            if (processo == 0){
-                System.out.println("Empate");
-            } else if (processo == 1) {
-                System.out.println("PC GAHOU!");
-                placarPC += 1;
-            } else if (processo == 2) {
-                System.out.println("JOGADOR GANHOU!");
-                placarJogador += 1;
+                int processo = disputa(jogadaPC, jogadorJogador);
+
+                if (processo == 0){
+                    System.out.println("Empate");
+                } else if (processo == 1) {
+                    System.out.println("PC GANHOU!");
+                    placarPC += 1;
+                } else if (processo == 2) {
+                    System.out.println("JOGADOR GANHOU!");
+                    placarJogador += 1;
+                }
+
+                System.out.println();
+                System.out.println("Placar PC: " + placarPC);
+                System.out.println("Placar JOGADOR: " + placarJogador);
+                System.out.println();
+                System.out.println("-----------------------------------------------");
+                System.out.println();
+
+            } else {
+                System.out.println("Por favor, digite uma opcao valida!");
+                System.out.println();
             }
 
-            System.out.println();
-            System.out.println("Placar PC: " + placarPC);
-            System.out.println("Placar JOGADOR: " + placarJogador);
-            System.out.println();
-            System.out.println("-----------------------------------------------");
-            System.out.println();
-
-
         } while (placarPC <= 2 && placarJogador <= 2);
-
-
-
-        //TESTE
-
-        System.out.println(disputa("pedra", "tesoura"));
-
-
 
     }
 
