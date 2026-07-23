@@ -3,9 +3,9 @@ package pooContaBancaria.src.entities;
 public class Conta {
 
     //ATRIBUTOS
-    String titular;
-    int numeroConta;
-    double saldo;
+    private String titular;
+    private int numeroConta;
+    private double saldo;
 
     //CONSTRUTOR
     public Conta(String titular, int numeroConta, double saldo){
@@ -15,15 +15,15 @@ public class Conta {
     }
 
     //GET E SET
-    private String getTitular(){
+    public String getTitular(){
         return titular;
     }
 
-    private double getSaldo(){
+    public double getSaldo(){
         return saldo;
     }
 
-    private int getNumeroConta(){
+    public int getNumeroConta(){
         return numeroConta;
     }
 
