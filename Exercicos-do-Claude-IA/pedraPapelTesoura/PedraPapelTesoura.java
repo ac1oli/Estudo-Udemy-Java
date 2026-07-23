@@ -1,4 +1,4 @@
-package src;
+package pedraPapelTesoura;
 
 import java.util.Locale;
 import java.util.Random;

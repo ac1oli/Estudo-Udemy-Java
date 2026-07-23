@@ -1,4 +1,4 @@
-package src;
+package jogoDaForca;
 
 import java.util.Scanner;
 
