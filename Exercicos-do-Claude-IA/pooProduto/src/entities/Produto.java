@@ -9,9 +9,6 @@ public class Produto {
     private int quantidadeEstoque;
 
     //construtor
-    public Produto(){
-
-    }
 
     public Produto(String nome, double preco, int quantidadeEstoque){
         this.nome = nome;
