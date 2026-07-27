@@ -1,6 +1,8 @@
 package pooAlunoETurma.src.program;
 
 import pooAlunoETurma.src.entities.Aluno;
+import pooAlunoETurma.src.entities.Turma;
+
 import java.util.ArrayList;
 
 
@@ -23,5 +25,14 @@ public class Programa {
         System.out.println();
         System.out.println(b.getNomeAluno() + b.getNotasAluno());
         System.out.println(b.calcularMedia());
+
+        Turma turma1 = new Turma("Turma teste");
+
+        turma1.adicionarAluno(a);
+        turma1.adicionarAluno(b);
+
+        System.out.println("Media geral da turma 1: " + turma1.calcularMediaGeral());
+
+        turma1.listaAprovado();
     }
 }
