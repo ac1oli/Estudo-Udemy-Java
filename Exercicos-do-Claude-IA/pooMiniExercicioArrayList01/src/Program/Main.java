@@ -1,7 +1,7 @@
-package pooMiniExercicioArrayList01.src.Program.Program;
+package pooMiniExercicioArrayList01.src.Program;
 
-import pooMiniExercicioArrayList01.src.Program.Proces.Carrinho;
-import pooMiniExercicioArrayList01.src.Program.Proces.Item;
+import pooMiniExercicioArrayList01.src.Entities.Carrinho;
+import pooMiniExercicioArrayList01.src.Entities.Item;
 
 public class Main {
     public static void main(String[] args){

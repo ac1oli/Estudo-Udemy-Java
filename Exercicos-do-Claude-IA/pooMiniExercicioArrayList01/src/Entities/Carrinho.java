@@ -1,4 +1,4 @@
-package pooMiniExercicioArrayList01.src.Program.Proces;
+package pooMiniExercicioArrayList01.src.Entities;
 
 import java.util.ArrayList;
 
@@ -24,10 +24,6 @@ public class Carrinho {
 
     public double calcularTotal(){
 
-        if (this.listaItens.size() == 0){
-            return 0;
-        }
-
         double valorTotalCompra = 0;
 
         for (Item item : this.listaItens){
@@ -36,9 +32,6 @@ public class Carrinho {
 
         return valorTotalCompra;
     }
-
-
-
 
 
 }

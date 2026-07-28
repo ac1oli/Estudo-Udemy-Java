@@ -1,4 +1,4 @@
-package pooMiniExercicioArrayList01.src.Program.Proces;
+package pooMiniExercicioArrayList01.src.Entities;
 
 public class Item {
 
