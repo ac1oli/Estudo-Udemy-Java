@@ -20,6 +20,10 @@ public class Turma {
         return alunos;
     }
 
+    public void adicionarAlunoATurma(Aluno aluno){
+        this.alunos.add(aluno);
+    }
+
     public double calcularMediaGeral(){
 
         if (this.alunos.size() == 0){
@@ -41,6 +45,8 @@ public class Turma {
     public void listaAprovados(){
 
         if (this.alunos.size() == 0) {
+            System.out.println("Nenhum aluno cadastrado nessa turma");
+        } else {
 
             for (Aluno aluno : this.alunos) {
 
@@ -49,9 +55,9 @@ public class Turma {
                 }
 
             }
-        } else {
-            System.out.println("Nenhum aluno cadastrado nessa turma");
         }
+
+
 
     }
 }

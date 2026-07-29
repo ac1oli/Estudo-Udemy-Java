@@ -26,7 +26,9 @@ public class Aluno {
     //Metodos
 
     public void adicionarNota(double nota){
-        this.notas.add(nota);
+        if (nota >= 0){
+            this.notas.add(nota);
+        }
     }
 
 
