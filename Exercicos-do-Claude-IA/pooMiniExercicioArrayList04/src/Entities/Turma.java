@@ -25,12 +25,11 @@ public class Turma {
     }
 
     public double calcularMediaGeral(){
+        double mediaGeral = 0;
 
         if (this.alunos.size() == 0){
-            return 0;
+            return mediaGeral;
         }
-
-        double mediaGeral = 0;
 
         for (Aluno aluno : this.alunos){
             mediaGeral += aluno.calcularMediaAluno();
@@ -51,7 +50,7 @@ public class Turma {
             for (Aluno aluno : this.alunos) {
 
                 if (aluno.calcularMediaAluno() >= 6) {
-                    System.out.printf("O aluno %s, foi APROVADO com a media: %f", aluno.getNomeAluno(), aluno.calcularMediaAluno());
+                    System.out.printf("O aluno %s, foi APROVADO com a media: %.2f%n", aluno.getNomeAluno(), aluno.calcularMediaAluno());
                 }
 
             }
