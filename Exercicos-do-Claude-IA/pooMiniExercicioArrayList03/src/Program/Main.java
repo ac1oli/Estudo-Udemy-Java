@@ -22,7 +22,7 @@ public class Main {
 
 
 
-        System.out.println(teste.duracaoTotalPlaylis());
+        System.out.println(teste.duracaoTotalPlaylist());
         teste.listasMusicas();
     }
 }

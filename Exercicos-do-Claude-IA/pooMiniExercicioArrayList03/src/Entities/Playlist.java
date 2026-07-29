@@ -1,6 +1,5 @@
 package pooMiniExercicioArrayList03.src.Entities;
 
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Playlist {
@@ -16,7 +15,7 @@ public class Playlist {
         this.musics.add(music);
     }
 
-    public String duracaoTotalPlaylis(){
+    public String duracaoTotalPlaylist(){
 
         int totalTime = 0;
 
@@ -34,7 +33,6 @@ public class Playlist {
     public void listasMusicas(){
         for (Music music : this.musics){
             System.out.printf("%nMusic: %s %nTime: %s%n", music.getNome(), music.formatarDuracao());
-            System.out.println(music.getDuracaoMusica());
         }
     }
 }
